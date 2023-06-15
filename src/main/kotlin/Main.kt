@@ -46,4 +46,8 @@ fun main(args: Array<String>) {
     val sobrenome = "Stark"
 
     println("Eu sou o $nome4 $sobrenome") //Cifrão é usado para colocar variaveis dentro de String
+    println("Double: ${Double.MAX_VALUE}") //Quando usamos o "." significa que estamos acessando algum parametro daquela varável específica
+
+    var str = "dkansdiu gai eba" + "asdibasdbasdbasidbayid" + "daophjsdouahgduhasd" + "daikphduioashduas" //Concatenação de Strings dessa forma também
+
 }
