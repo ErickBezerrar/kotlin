@@ -50,4 +50,18 @@ fun main(args: Array<String>) {
 
     var str = "dkansdiu gai eba" + "asdibasdbasdbasidbayid" + "daophjsdouahgduhasd" + "daikphduioashduas" //Concatenação de Strings dessa forma também
 
+
+
+
+    var nome99: String = "Erick Bezerra Ribeiro Trindade"
+    var nome98: String = " "
+    val numeromenor: UByte = 40u
+    var pibbrasil: Long = 1869000000000
+    var populacaobrasil: Int = 211000000
+
+    var valor = pibbrasil / populacaobrasil
+    println(valor)
+
+
+
 }
