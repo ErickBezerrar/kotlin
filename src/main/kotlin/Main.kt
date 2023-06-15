@@ -40,4 +40,10 @@ fun main(args: Array<String>) {
     val nome3 = "Tony" //Usando val significa que a variável não poderá ser mutada
 
 
+    //Formatação de Strings
+
+    val nome4 =  "Tony"
+    val sobrenome = "Stark"
+
+    println("Eu sou o $nome4 $sobrenome") //Cifrão é usado para colocar variaveis dentro de String
 }
