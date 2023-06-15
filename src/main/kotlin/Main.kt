@@ -3,11 +3,14 @@ fun main(args: Array<String>) {
     println("Program arguments: ${args.joinToString()}")
     println("Yes!")
 
+    //Teste
     var name: String = "Erick"
     var idade: Int = 18
     println(name)
     println(idade)
 
+
+    //Tamanho dos tipos de dados
     println("Double MAX ${Double.MAX_VALUE} - MIN ${Double.MIN_VALUE}")
     println("Float MAX ${Float.MAX_VALUE} - MIN ${Float.MIN_VALUE}")
     println("Long MAX ${Long.MAX_VALUE} - MIN ${Long.MIN_VALUE}")
@@ -15,6 +18,8 @@ fun main(args: Array<String>) {
     println("Short MAX ${Short.MAX_VALUE} - WIN ${Short.MIN_VALUE}")
     println("Byte MAX ${Byte.MAX_VALUE} - WIN ${Byte.MIN_VALUE}")
 
+
+    //Declaração dos tipos de variáveis
     var c: Char = 'a'
     var S: String = "hsdffsddf sdf segsdfg sdfg sdg sd rgiybser ibsdflhb dsflgib dfg bdsgflisdbgflsdhb"
     var b: Boolean = true
@@ -24,12 +29,15 @@ fun main(args: Array<String>) {
     var short: Short = 10
     var byte: Byte = 10
     var int: Int = 40
-
     val abc: UInt = 50u //O "u" sempre será usado depois da declaração do valor da variável. UNSIGNED"
+
 
     var nome2 = "Tony" //Usando o var a varíavel pode ser mudada
     nome2 = "José"
     println(nome2)
 
+
     val nome3 = "Tony" //Usando val significa que a variável não poderá ser mutada
+
+
 }
