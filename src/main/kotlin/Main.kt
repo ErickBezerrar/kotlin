@@ -8,10 +8,10 @@ fun main(args: Array<String>) {
     println(name)
     println(idade)
 
-    println("Double MAX ${Double. MAX_VALUE} - MIN ${Double.MIN_VALUE}")
-    println("Float MAX ${Float. MAX_VALUE} - MIN ${Float.MIN_VALUE}")
-    println("Long MAX ${Long. MAX_VALUE} - MIN ${Long.MIN_VALUE}")
-    println("Int MAX ${Int. MAX_VALUE} - MIN ${Int.MIN_VALUE}")
+    println("Double MAX ${Double.MAX_VALUE} - MIN ${Double.MIN_VALUE}")
+    println("Float MAX ${Float.MAX_VALUE} - MIN ${Float.MIN_VALUE}")
+    println("Long MAX ${Long.MAX_VALUE} - MIN ${Long.MIN_VALUE}")
+    println("Int MAX ${Int.MAX_VALUE} - MIN ${Int.MIN_VALUE}")
     println("Short MAX ${Short.MAX_VALUE} - WIN ${Short.MIN_VALUE}")
     println("Byte MAX ${Byte.MAX_VALUE} - WIN ${Byte.MIN_VALUE}")
 
@@ -25,4 +25,11 @@ fun main(args: Array<String>) {
     var byte: Byte = 10
     var int: Int = 40
 
+    val abc: UInt = 50u //O "u" sempre será usado depois da declaração do valor da variável. UNSIGNED"
+
+    var nome2 = "Tony" //Usando o var a varíavel pode ser mudada
+    nome2 = "José"
+    println(nome2)
+
+    val nome3 = "Tony" //Usando val significa que a variável não poderá ser mutada
 }
