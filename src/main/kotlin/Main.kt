@@ -1,3 +1,5 @@
+import kotlin.math.max
+
 fun main(args: Array<String>) {
     println("Hello World!")
     println("Program arguments: ${args.joinToString()}")
@@ -62,6 +64,12 @@ fun main(args: Array<String>) {
 
     helloworld()
     hello(nome2)
+    val soma = sum(70,90)
+    val soma2 = sum(70,80)
+
+    val str2 = "Erick Bezerra Ribeiro Trindade"
+
+    str2.length
 }
 
 fun hello(nome : String): String{
@@ -69,6 +77,12 @@ fun hello(nome : String): String{
 }
 
 fun helloworld(): Unit { //O unit serve para funções que não tem retorno
-    return println("Hello World")
+    println("Hello World")
 }
 
+fun sum(num1: Int, num2: Int): Int{
+    val num3 = num1 + num2
+    return num3
+}
+
+fun sum2(num1: Int, num2: Int): Int = (num1 + num2)
