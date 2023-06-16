@@ -59,7 +59,16 @@ fun main(args: Array<String>) {
 
     var valor = pibbrasil / populacaobrasil
     println(valor)
-    
+
+    helloworld()
+    hello(nome2)
 }
 
-fun
+fun hello(nome : String): String{
+    return ("Olá $nome ! Seja bem vindo!!")
+}
+
+fun helloworld(): Unit { //O unit serve para funções que não tem retorno
+    return println("Hello World")
+}
+
