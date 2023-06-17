@@ -1,3 +1,5 @@
+import java.util.stream.IntStream.range
+
 fun main(args: Array<String>) {
     println("Hello World!")
     println("Program arguments: ${args.joinToString()}")
@@ -81,7 +83,8 @@ fun main(args: Array<String>) {
     }
 
     verificaridade(90)
-    calcularbonus("Digite A profissão: ")
+    calcularbonus(" ")
+    calcularbonus1(" ", 9)
 }
 
 fun hello(nome : String): String{
@@ -162,5 +165,26 @@ fun calcularbonus(cargo: String) {
     } else {
         println("Profissão não especificada da empresa, por favor insira a profissão correta")
         calcularbonus(cargo)
+    }
+}
+
+fun calcularbonus1(cargo: String, xp: Int) {
+    var cargo: String = readln()
+    if ((cargo == "Gerente") && xp < 2)
+        println("$cargo receberá 2.000 reais pois possui $xp anos de experiencia")
+    else {
+        println("$cargo receberá 3.000 reais pois possui $xp anos de experiencia")
+    }
+
+    if (cargo == "Coordenador" && xp < 1) {
+        println("$cargo receberá 1.500 reais pois possui $xp anos de experiencia")
+    } else if (cargo == "Coordenador") {
+        println("$cargo receberá 1.800 reais pois possui $xp anos de experiencia")
+    }
+
+    if (cargo == "Engenheiro")
+        println("Por ser $cargo você receberá 1.000 reais de bônus")
+    else if (cargo == "Estagiário") {
+        println("Por ser $cargo você receberá 500 reais de bônus")
     }
 }
