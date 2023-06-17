@@ -73,6 +73,14 @@ fun main(args: Array<String>) {
     tamanhostring("Isaac Da silva costa moreira")
     cubo(2)
     println(milha(1.0))
+
+    val num96: Int = 90
+    if (num96 > 20){
+        println("Número maior do que 20")
+
+    }
+
+    verificaridade(90)
 }
 
 fun hello(nome : String): String{
@@ -112,3 +120,27 @@ fun cubo(num: Int){
 fun milha(num: Double): Double{
     return (num * 1.6)
 }
+
+fun verificaridade(idade: Int)  {
+    if(idade >18){
+        println("Maior de idade")
+
+        if (idade > 60){
+            println("Terceira idade")
+        }
+
+    } else if(idade < 10 ){
+        println("Criança")
+    } else {
+        println("Menor de idade")
+    }
+}
+
+fun saudacao(dia: Boolean): String{
+    return if (dia) {
+        "Bom dia"
+    } else{
+        "Boa noite"
+    }
+}
+
