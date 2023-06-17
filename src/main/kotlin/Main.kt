@@ -81,6 +81,7 @@ fun main(args: Array<String>) {
     }
 
     verificaridade(90)
+    calcularbonus("Digite A profissão: ")
 }
 
 fun hello(nome : String): String{
@@ -144,3 +145,22 @@ fun saudacao(dia: Boolean): String{
     }
 }
 
+fun calcularbonus(cargo: String) {
+    var cargo: String = readln()
+
+    if (cargo == "Gerente"){
+        println("$cargo recebeu um bônus de 2.000 reais!")
+    }
+    else if (cargo == "Coordenador") {
+        println("$cargo recebeu um bônus de 1.500 reais!")
+    }
+    else if (cargo == "Engenheiro"){
+        println("$cargo recebeu um bônus de 1.000 reais!")
+    }
+    else if (cargo == "Estagiário"){
+        println("$cargo recebeu um bônus de 500 reais!")
+    } else {
+        println("Profissão não especificada da empresa, por favor insira a profissão correta")
+        calcularbonus(cargo)
+    }
+}
